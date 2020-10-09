@@ -36,3 +36,127 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  overflow-x: hidden;
+}
+.header{
+ background: url('./assets/images/pro.jpg');
+ width: 110%;
+ height: 100%;
+ min-height: 60vh;
+ min-width: 100vw;
+ background-repeat: no-repeat;
+ background-color: #2B2B2B;
+}
+
+/* ============================ Home ============================*/
+.home-content {
+  background-color: #2B2B2B;
+}
+
+.home-content-tab {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hamehome-content-list {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-content-tab button {
+  width: 20%;
+  padding: 20%;
+  border: none;
+  cursor: pointer;
+  margin: 1% 5%;
+  padding: 1.5%;
+  background-color: #2B2B2B;
+  color: white;
+}
+.button-focus{
+  border-bottom: 5px solid #0066ff!important;
+}
+.home-content-tab button:focus {
+  outline: none;
+}
+
+/* ============================ content ============================*/
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 0 10%;
+}
+
+.card {
+  width: 25%;
+  height: 100%;
+  margin: 1%;
+  padding: 1%;
+}
+
+.content-img {
+  display: grid;
+  background: url(assets/images/card-news.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+}
+
+.content-text{
+  background-color: black;
+  padding: 2% 1% 5% 2%;
+  border-radius: 5%;
+}
+
+.favorite {
+  align-self: start;
+  justify-self: flex-end;
+}
+
+.favorite button {
+  border-radius: 50%;
+  background-color: rgb(154, 148, 139);
+  opacity: 0.8;
+  border: none;
+  min-height: 25px;
+}
+.favorite button:focus {
+  border: 0;
+  outline: 0;
+  background-color: rgb(245, 95, 163);
+}
+
+.heart {
+  background: url("assets/images/heart.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 15px;
+  min-height: 15px;
+  cursor: pointer;
+  
+}
+.heart-focus {
+  background-color: rgb(245, 95, 163)!important;
+  pointer-events: none;
+  cursor: default;
+}
+.heart-black{
+  background-color: rgb(0, 0, 0)!important;
+}
+
+.card a {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
